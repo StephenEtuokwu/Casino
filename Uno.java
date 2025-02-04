@@ -321,10 +321,10 @@ public class Uno
          System.out.println("Congratutaions, you've beaten the dealer in Uno!");     
       else if(dealerHand.size() == 0)
          System.out.println("Aww tough luck, you lost to the dealer in Uno");
-      else if(playerHand.size() > dealerHand.size())
+      else if(playerHand.size() < dealerHand.size())
          System.out.println("After going through the whole deck, you had the smaller remaining hand, meaning you've beaten the dealer in Uno!");
       else
-         System.out.println("After going through the whole deck, you had the smaller remaining hand, meaning you've been beaten by the dealer in Uno");
+         System.out.println("After going through the whole deck, you had the larger remaining hand, meaning you've been beaten by the dealer in Uno");
       reset();
    }        
    
